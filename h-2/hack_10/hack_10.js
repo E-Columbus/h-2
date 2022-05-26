@@ -15,17 +15,13 @@
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
 
-function impares(a) {
-  var x = []
-for (var n = 0; n < a.length; n++) {
+for (var n = 0; n < arr.length; n++) {
   if(n % 2 == 1) {
-      x.push(a[n]);
+    result.push(arr[n]);
   }
 }
-return x;
-}
 
-console.log (impares(arr))
+console.log (result)
 
 //export result
 module.exports = result;
