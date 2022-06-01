@@ -9,11 +9,14 @@
 let str = "fooziman";
 let result = [];
 
-for (var posicion =  0; posicion <= 0; posicion++){
-    result.push(...str)
+var DecomposedArray = str.split('')
+var LengthdeDecomposed = DecomposedArray.length
+
+for (let index = 0; index < LengthdeDecomposed; index++) {
+  result.push(DecomposedArray[index]);
 }
 
-console.log(result)
+console.log(result);
 
 //export result
 module.exports = result;

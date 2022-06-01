@@ -7,9 +7,11 @@
  * output => ["Foo","Bar","Baz","Qux","Echo"]   
  */
 let arr = ["foo","bar","baz","qux","echo"];
-let result = [];
 
-for(var idx = 0; idx < arr.length; idx++){
+let result = [];
+let lengthDelArray = arr.length
+
+for(var idx = 0; idx < lengthDelArray; idx++){
 	result.push(arr[idx].charAt(0).toUpperCase() + arr[idx].slice(1));
 }
 

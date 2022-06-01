@@ -9,13 +9,18 @@
 let str = "fooziman";
 let result = [];
 
-let i = 0;
-let len = 1;
+var DecomposedArray = str.split('')
+var index = 0;
 
-while(i < len){
-    result.push(...str)
-    console.log(result);
-   i++;
+while (true) {
+  if(index == 0) {
+   result.push(DecomposedArray)
+   console.log(result[index]);
+  }else{
+   break
+  }
+  
+  index++;
 }
 
 //export result

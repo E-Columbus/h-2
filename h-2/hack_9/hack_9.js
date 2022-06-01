@@ -9,8 +9,8 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = 0;
 
-for (var index = 0; index < arr.length; index++) {
-    if (arr[index].startsWith("b")) {
+for (var index = 0; index < arr.length; index++){
+    if (arr[index].startsWith("b")){
         result++;
     }
 }

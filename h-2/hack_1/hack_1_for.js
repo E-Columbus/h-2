@@ -7,12 +7,13 @@
  */
 
 let result = [];
+let arrayAgregar = [0,1,2,3,4,5]
 
-for (var posicion =  0; posicion <= 0; posicion++){
-    result.push(0,1,2,3,4,5)
+for (let index = 0; index < arrayAgregar.length; index++) {
+    result.push(arrayAgregar[index]);
 }
 
-console.log(result)      
+console.log(result);
 
 //export result
 module.exports = result;

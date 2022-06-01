@@ -7,14 +7,17 @@
  */
 let result = [];
 
-let i = 0;
-let len = 1;
+var index = 0;
 
-while(i < len){
-    result.push(1,2,3,4,5)
-    console.log(result);
-   i++;
-}
+while (true) {
+    if(index == 0) {
+     result.push([1,2,3,4,5]);
+     console.log(result[index]);
+    }else{
+     break
+    }
+    index++;
+  }
 
 //export result
 module.exports = result;

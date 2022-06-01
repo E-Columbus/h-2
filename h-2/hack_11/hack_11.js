@@ -12,19 +12,23 @@
  * echo => 3ch0
  * 3) anexar al inicio, al final y entre la unión de los array el string "h@ck"
  * 
- * 
+ *             
  * output => ["h@ck","one",2,"three",4,"five","h@ck","f00","Bar","b@z","quX","3ch0","h@ck"]   
  */
-
 let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
 
-for (var posicion =  0; posicion <= 0; posicion++){
+var index = 0;
+result.push(1)
 
-    result.push("h@ck", ...numberArray, "h@ck", ...stringArray, "h@ck")
+while (index < 1) {
+    if(index == 0) {
+    result.shift();
 
-    result.splice(1,1,"one")
+    result.push("h@ck" , ...numberArray, "h@ck" , ...stringArray, "h@ck");
+
+    result.splice(1,1,"one"),
     result.splice(3,1,"three")
     result.splice(5,1,"five")
 
@@ -32,10 +36,11 @@ for (var posicion =  0; posicion <= 0; posicion++){
     result.splice(8,1,"Bar")
     result.splice(9,1,"b@z")
     result.splice(10,1,"quX")
-    result.splice(11,1,"3ch0")
+    result.splice(11,1,"3ch0")    
 }
-
-console.log(result)
+  console.log(result);
+  index++;
+}
 
 //export result
 module.exports = result;

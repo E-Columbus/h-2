@@ -11,11 +11,11 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
-for (var posicion =  0; posicion <= 0; posicion++){
-    result.push(arr[1].replaceAll("a", "@"),arr[2].replaceAll("a", "@"),arr[3].toUpperCase())
-}
+for (let index = 1; index < arr.length - 1; index++) {
+    result.push(arr[index].replaceAll("a","@").replace("qux","QUX"))
+    }
 
-console.log(result)
+console.log(result);
 
 //export result
 module.exports = result;

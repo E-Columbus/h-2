@@ -14,10 +14,11 @@
  */
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
+var len = arr.length
 
-for (var n = 0; n < arr.length; n++) {
-  if(n % 2 == 1) {
-    result.push(arr[n]);
+for (var index = 0; index < len; index++) {
+  if(index % 2 == 1) {
+    result.push(arr[index]);
   }
 }
 

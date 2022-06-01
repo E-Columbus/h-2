@@ -6,14 +6,17 @@
  *  output => [5,4,3,2,1]
  */
 let result = [];
+var index = 0;
 
-let i = 0;
-let len = 1;
-
-while(i < len){
-    result.push(5,4,3,2,1)
-    console.log(result);
-   i++;
+while (true) {
+  if(index == 0) {
+   result.push([1,2,3,4,5].reverse());
+   console.log(result[index]);
+  }else{
+   break
+  }
+  
+  index++;
 }
 
 //export result

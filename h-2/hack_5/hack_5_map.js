@@ -7,7 +7,8 @@
  */
 let result = [];
 
-result.push(7,5,3,1)
+result.push(1,3,5,7)
+result.reverse()
 
 var map1 = result.map(x => x);
   console.log(map1)
