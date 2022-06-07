@@ -7,6 +7,8 @@
  */
 let result = [];
 
+/* SOLUCION 1 
+
 var index = 0;
 
 while (true) {
@@ -18,6 +20,19 @@ while (true) {
     }
     index++;
   }
+
+*/
+
+/* SOLUCION 2 - ACEPTADA POR ROBOT*/
+
+let index = 1
+
+while(index <= 5){
+  result.push(index)
+  index++
+}
+
+console.log (result)
 
 //export result
 module.exports = result;

@@ -9,6 +9,9 @@
 let str = "fooziman";
 let result = [];
 
+
+/* SOLUCION 1
+
 var DecomposedArray = str.split('')
 var index = 0;
 
@@ -22,6 +25,33 @@ while (true) {
   
   index++;
 }
+
+*/
+
+/* SOLUCION 2
+
+let index = 0
+
+while(index < 7){
+  result.push(str[index])
+  index++
+}
+
+console.log (result)
+
+*/
+
+/* SOLUCION 3 - ACEPTADA POR ROBOT*/
+
+let lenStr = str.length
+let index = 0
+
+while(index < lenStr){
+  result.push(str[index])
+  index++
+}
+
+console.log (result)
 
 //export result
 module.exports = result;
