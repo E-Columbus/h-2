@@ -9,11 +9,11 @@
 let arr = ["foo","bar","baz","qux","echo"];
 
 let result = [];
-let lengthDelArray = arr.length
+let len = arr.length
 
-for(var idx = 0; idx < lengthDelArray; idx++){
+for(var idx = 0; idx < len; idx++){
 	result.push(arr[idx].charAt(0).toUpperCase() + arr[idx].slice(1));
-}
+}	
 
 console.log(result);
 

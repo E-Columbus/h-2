@@ -7,10 +7,22 @@
  */
 let result = [];
 
+/* SOLUTION 1 - MAP */
 result.push(1,3,5,7)
 
-var map1 = result.map(x => x);
-  console.log(map1)
+result.map(function(x){
+  return x
+})  
+
+/* SOLUTION 2 - FILTER
+result.push(0,1,2,3,5,6,7)
+
+result = result.filter(function(index) {
+  return (index % 2 == 1);
+}); */
+
+
+console.log(result) 
 
 //export result
 module.exports = result;

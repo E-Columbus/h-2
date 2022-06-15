@@ -8,48 +8,24 @@
  */
 let str = "fooziman";
 let result = [];
-
-
-/* SOLUCION 1
-
-var DecomposedArray = str.split('')
-var index = 0;
-
-while (true) {
-  if(index == 0) {
-   result.push(DecomposedArray)
-   console.log(result[index]);
-  }else{
-   break
-  }
-  
-  index++;
-}
-
-*/
-
-/* SOLUCION 2
-
 let index = 0
 
-while(index < 7){
-  result.push(str[index])
-  index++
-}
-
-console.log (result)
-
-*/
-
-/* SOLUCION 3 - ACEPTADA POR ROBOT*/
-
+/* SOLUTION 1 */
 let lenStr = str.length
-let index = 0
 
-while(index < lenStr){
+while(index < lenStr){ // <= 7 / < 8 would work as well
   result.push(str[index])
   index++
 }
+
+/* SOLUTION 2
+var DecomposedArray = str.split('')
+var len = DecomposedArray.length
+
+while (index < len){
+  result.push(DecomposedArray[index]);
+  index++
+} */
 
 console.log (result)
 

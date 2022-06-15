@@ -7,35 +7,35 @@
  */
 let result = [];
 
+/* SOLUTION 1 - INDEX */
+let index = 7;
 
-/*SOLUCION 1
-
-var index = 0;
-
-while (true) {
-  if(index == 0) {
-   result.push([1,3,5,7].reverse());
-   console.log(result[index]);
-  }else{
-   break
-  }
-  
-  index++;
-}
-
-*/
-
-/* SOLUCION 2 - ACEPTADA POR ROBOT*/
-
-let index = 1
-
-while(index <= 7){
+while (index >= 0){
   if (index % 2 == 1)
   result.push(index)
-  index++
+  index--
 }
 
-result.reverse()
+/* SOLUTION 2 - REVERSE INDEX
+let index = 1
+
+while (index <= 7){
+  if (index % 2 == 1)
+  result.push(index)
+  result.reverse()
+  index++
+} */
+
+/* SOLUTION 3 - EXTERNAL ARRAY'S LENGTH & INDEX
+let extraArr = [0,1,2,3,4,5,6,7]
+let len = extraArr.length - 7
+let index = 7
+
+while (index >= len) {
+  if (index % 2 == 1)
+  result.push(extraArr[index]);
+  index--
+} */
 
 console.log (result)
 

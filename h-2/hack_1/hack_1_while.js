@@ -7,41 +7,39 @@
  */
 let result = [];
 
-/* SOLUCION 1
-
-var index = 0;
-
-while (true) {
-  if(index == 0) {
-   result.push([0,1,2,3,4,5]);
-   console.log(result[index]);
-    }else{
-   break
-  }
-index++;
-}
-
-/* SOLUCION 2
-
-result.push([0,1,2,3,4,5])
-let LengthDelArray = result.length
+/* SOLUTION 1 - EXTERNAL ARRAY */
+result.push(0,1,2,3,4,5)
+let len = result.length
 let index = 0
 
-while (index < LengthDelArray){
-   console.log(result[index])
+while (index < len){
    index++
-}
+} 
 
-*/
+/* SOLUTION 2 - LENGTH
+let index = 0
 
-/* SOLUCION 3 - ACEPTADA POR ROBOT*/
+while (index <= 5) {
+  result.push(result.length);
+  index++
+} */
 
+/* SOLUTION 3 - LENGTH (ALTERNATIVE)
+let index = 0
+
+while (index < 6) { 
+  let len = result.length
+  result.push(len);
+  index++
+} */
+
+/* SOLUTION 4 - INDEX
 let index = 0
 
 while(index <= 5){
   result.push(index)
   index++
-}
+} */
 
 console.log (result)
 

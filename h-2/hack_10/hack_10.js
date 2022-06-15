@@ -10,8 +10,9 @@
  * }  
  * 
  * 
-    output => ["bar","qux","octo","foobar"]   
- */
+  output => ["bar","qux","octo","foobar"]   
+*/
+
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
 var len = arr.length
@@ -20,7 +21,7 @@ for (var index = 0; index < len; index++) {
   if(index % 2 == 1) {
     result.push(arr[index]);
   }
-}
+}   
 
 console.log (result)
 

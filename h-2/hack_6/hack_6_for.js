@@ -9,12 +9,20 @@
 let str = "fooziman";
 let result = [];
 
-var DecomposedArray = str.split('')
-var LengthdeDecomposed = DecomposedArray.length
+/* SOLUTION 1 */
+let lenStr = str.length
 
-for (let index = 0; index < LengthdeDecomposed; index++) {
+for (let index = 0; index < lenStr; index++){ // <= 7 / < 8 would work as well
+  result.push(str[index])
+} 
+
+/* SOLUTION 2
+var DecomposedArray = str.split('')
+var len = DecomposedArray.length
+
+for (let index = 0; index < len; index++) {
   result.push(DecomposedArray[index]);
-}
+} */
 
 console.log(result);
 

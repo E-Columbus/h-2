@@ -8,10 +8,14 @@
 let result = [];
 
 result.push(1,3,5,7)
-result.reverse()
 
-var map1 = result.map(x => x);
-  console.log(map1)
+result.map(function(x){
+  return x
+}) 
+
+result.reverse()
+  
+console.log(result)
 
 //export result
 module.exports = result;

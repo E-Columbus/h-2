@@ -15,32 +15,47 @@
  *             
  * output => ["h@ck","one",2,"three",4,"five","h@ck","f00","Bar","b@z","quX","3ch0","h@ck"]   
  */
+
 let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
 
-var index = 0;
-result.push(1)
+result = numberArray.concat(stringArray) // spread operator would work as well.
 
-while (index < 1) {
-    if(index == 0) {
-    result.shift();
+result.unshift("h@ck")
+result.push("h@ck")
 
-    result.push("h@ck" , ...numberArray, "h@ck" , ...stringArray, "h@ck");
-
-    result.splice(1,1,"one"),
-    result.splice(3,1,"three")
-    result.splice(5,1,"five")
-
-    result.splice(7,1,"f00")
-    result.splice(8,1,"Bar")
-    result.splice(9,1,"b@z")
-    result.splice(10,1,"quX")
-    result.splice(11,1,"3ch0")    
+for (let index = 0; index < result.length; index++){
+  if (result[1] == 1){
+    result[1] = "one";
+  }
+  if (result[3] == 3){
+    result[3] = "three";
+  }
+  if (result[5] == 5){
+    result[5] = "five";
+  }
+  if (result[6] == "foo"){
+    result.splice(6,0,"h@ck")
+  }
+  if (result[7] == "foo"){
+    result[7] = "f00";
+  }
+  if (result[8] == "bar"){
+    result[8] = "Bar"
+  }
+  if (result[9] == "baz"){
+    result[9] = "b@z"
+  }
+  if (result[10] == "qux"){
+    result[10] = "quX"
+  }
+  if (result[11] == "echo"){
+    result[11] = "3ch0"
+  }
 }
-  console.log(result);
-  index++;
-}
+
+console.log(result) 
 
 //export result
 module.exports = result;

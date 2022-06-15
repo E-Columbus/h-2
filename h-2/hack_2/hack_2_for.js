@@ -7,13 +7,30 @@
  */
 let result = [];
 
+/* SOLUTION 1 - EXTERNAL ARRAY */
+let extraArr = [1,2,3,4,5]
+var len = extraArr.length
+ 
+for (let index = 0; index < len; index++) {
+    result.push(extraArr[index]);
+} 
+ 
+/* SOLUTION 2 - LENGTH
+for (let index = 1; index < 6; index++) { // <= 5 would work as well
+    result.push(result.length + 1);
+} */
+ 
+/* SOLUTION 3 - LENGTH (ALTERNATIVE)
+for (let index = 1; index < 6; index++) { 
+    let len = result.length + 1
+    result.push(len);
+} */
 
-let arrayAgregar = [0,1,2,3,4,5]
+/* SOLUTION 4 - INDEX
+ for (let index = 1; index <= 5; index++) {
+    result.push(index);
+} */
 
-for (let index = 1; index < arrayAgregar.length; index++) {
-    result.push(arrayAgregar[index]);
-}
-  
 console.log(result);
 
 //export result

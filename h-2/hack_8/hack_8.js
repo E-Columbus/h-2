@@ -8,12 +8,14 @@
  * 
  * output => ["b@r","b@z","QUX"]   
  */
+
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
+let len = arr.length - 1
 
-for (let index = 1; index < arr.length - 1; index++) {
-    result.push(arr[index].replaceAll("a","@").replace("qux","QUX"))
-    }
+for (let index = 1; index < len; index++) {
+    result.push(arr[index].replaceAll("a","@").replace("qux", arr[3].toUpperCase())) // or "QUX" 
+    }  
 
 console.log(result);
 
